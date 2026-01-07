@@ -1,0 +1,52 @@
+/* Admin.css - Only for Login/Signup */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body, html {
+  margin: 0; padding: 0; width: 100%; height: 100%; 
+  font-family: 'Poppins', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+/* Full Screen Background */
+.admin-container {
+  width: 100vw; height: 100vh; display: flex;
+  justify-content: center; align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Card Style */
+.form-wrapper {
+  background: #fff; width: 400px; max-width: 90%;
+  border-radius: 15px; box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  overflow: hidden; padding-bottom: 20px;
+}
+
+/* Header Tabs */
+.form-header { display: flex; border-bottom: 1px solid #ddd; }
+.title {
+  width: 50%; text-align: center; padding: 15px; cursor: pointer;
+  font-weight: 600; color: #aaa; background: #f9f9f9; transition: 0.3s;
+}
+.title:hover { background: #f1f1f1; }
+.title.active { background: #fff; color: #764ba2; border-bottom: 3px solid #764ba2; }
+
+/* Form Content */
+.form-body { padding: 30px; }
+h2 { text-align: center; margin-bottom: 20px; color: #333; }
+.input-group { margin-bottom: 15px; }
+.input-group input {
+  width: 100%; padding: 12px; border: 1px solid #ddd;
+  border-radius: 8px; outline: none; transition: 0.3s;
+}
+.input-group input:focus { border-color: #764ba2; }
+
+.submit-btn {
+  width: 100%; padding: 12px; background: linear-gradient(to right, #667eea, #764ba2);
+  color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; margin-top: 10px;
+}
+.submit-btn:hover { transform: scale(1.02); }
+
+/* Animation */
+.animate-fade { animation: fadeIn 0.5s ease-in-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
