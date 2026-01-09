@@ -64,7 +64,7 @@ function Dashboard({ onLogout }) {
         <div className="content-area animate-fade">
            {activePage === 'Dashboard' && <h3>📊 This is the Dashboard Home.</h3>}
            
-           {/* 👇 3. Yahan Logic lagaya hai: Agar 'Products' selected hai to Component dikhao */}
+           {/*  3. Yahan Logic lagaya hai: Agar 'Products' selected hai to Component dikhao */}
            {activePage === 'Products' && <ShowProduct />}
            
            {activePage === 'Contact' && <h3>📞 Contact Us Information goes here.</h3>}
